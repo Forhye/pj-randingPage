@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HODU 랜딩 페이지</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./css/mobile.css"
+      media="screen and (max-width:767px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/web.css"
+      media="screen and (min-width:768px)"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="sr-only">HODU 랜딩 페이지</h1>
+
+      <!-- 헤더 로고&메뉴 영역 -->
+      <div class="nav-main">
+        <img src="/src/logo.svg" alt="HODU 로고 이미지" />
+        <nav>
+          <ul>
+            <li class="dis-767-none">Home</li>
+            <li class="dis-767-none">About</li>
+            <li class="dis-767-none">Support</li>
+            <li class="dis-767-none"><button>Download</button></li>
+          </ul>
+          <img src="src/menu.svg" alt="메뉴 아이콘" class="dis-768-none" />
+        </nav>
+      </div>
+
+      <!-- 헤더 텍스트 영역 -->
+      <div class="main-text-area">
+        <p class="text-em">
+          <em>Lorem Ipsum is simply</em>
+          <em>dummy text</em>
+          of the printing and
+        </p>
+        <p class="text-description-header">
+          <span>Lorem Ipsum is simply dummy text</span>
+          <span>
+            of the printing and
+            <br />
+            typesetting industry.
+            <br />
+          </span>
+          <span>Lorem Ipsum has been the industry's</span>
+          <span>
+            standard dummy text
+            <br />
+            ever since the 1500s,
+          </span>
+          <span>when an unknown</span>
+        </p>
+
+        <!-- 다운로드 버튼 -->
+        <div class="btn-download">
+          <button class="btn-orange">Download</button>
+        </div>
+
+        <!-- 헤더 이미지 영역 -->
+        <div class="area-main-img">
+          <img
+            src="./src/box-cat.png"
+            alt="머리가 가려지는 만큼 작은 박스를 머리에 뒤집어 쓰고 앉아있는 고양이 사진"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- 메인 컨텐츠 영역 시작 -->
+    <main>
+      <h2 class="sr-only">메인 컨텐츠</h2>
+
+      <!-- 첫번째 컨텐츠 이미지 + 타이틀 + 설명 -->
+      <section>
+        <h3 class="sr-only">첫번째 컨텐츠</h3>
+
+        <div class="contain-first">
+          <img
+            src="/src/img_4.jpg"
+            alt="체크무늬 이불 위에 누워서 대각선 방향으로 바라보고 있는 고양이 사진"
+          />
+
+          <!-- 첫번째 컨텐츠 텍스트 영역 -->
+          <div class="area-text">
+            <p class="text-bold">
+              Lorem Ipsum is simply dummy text of the printing and dummy text
+            </p>
+            <p class="text-description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+        </div>
+
+        <article class="contain-second">
+          <p class="text-point">dummy text of the printing and dummy</p>
+
+          <p class="text-description-l">
+            Lorem Ipsum is simply
+            <em class="text-point-small">dummy text</em>
+            of the
+            <span>printing and typesetting industry.</span>
+            <span>Lorem Ipsum has been the industry's</span>
+            <span>standard dummy text ever since the 1500s,</span>
+            <span>when an unknown</span>
+          </p>
+
+          <div class="img-area">
+            <img
+              src="./src/img_1.jpg"
+              alt="그림이 걸려있는 벽 앞에 세워둔 캣타워 위에 누워서 오른쪽으로 바라보고 있는 고양이 사진"
+            />
+            <img
+              src="./src/img_2.jpg"
+              alt="벽을 쳐다보고 앉아있는 고양이의 뒷모습 사진"
+            />
+            <img
+              src="./src/img_3.jpg"
+              alt="벽을 쳐다보고 앉아있는 고양이의 뒷모습 사진"
+            />
+          </div>
+        </article>
+
+        <div class="learn-more">
+          <p class="text-description-l">
+            <span>Lorem Ipsum is simply dummy text of the</span>
+            <span>printing and typesetting industry.</span>
+            <span>Lorem Ipsum has been the industry's</span>
+            <span>standard dummy text ever since the 1500s,</span>
+            <span>when an unknown</span>
+            <span>Ipsum is simply dummy text of the printing</span>
+            <span>and typesetting industry.</span>
+          </p>
+
+          <button class="btn-orange">Learn More</button>
+        </div>
+
+        <form action="#">
+          <p class="form-title">
+            Subscribe to our
+            <span>Blog post</span>
+          </p>
+          <p class="form-descrition">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+          </p>
+
+          <img src="./src/mail.svg" alt="편지 모양 아이콘" />
+
+          <input
+            type="email"
+            name="user-email"
+            placeholder="Enter your e-mail address"
+            required
+          />
+          <div class="btn-subscribe">
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
+
+        <aside class="btn-top"></aside>
+
+        <div class="bg-cat">
+          <img
+            src="./src/img_5.jpg"
+            alt="정면을 보고 있는 고양이를 아래 각도에서 촬영한 사진"
+          />
+        </div>
+      </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+      <h2 class="sr-only">HODU 소셜 메뉴 바</h2>
+
+      <div class="area-footer">
+        <div class="logo">
+          <a href="#">
+            <img src="./src/logo.svg" alt="HODU 로고 이미지" />
+          </a>
+        </div>
+
+        <ul class="nav-menu">
+          <li><a href="">About</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Support</a></li>
+          <li><a href="">Terms of Use</a></li>
+        </ul>
+      </div>
+
+      <nav class="area-social">
+        <ul class="social">
+          <li>
+            <img src="./src/blog.svg" alt="블로그 아이콘" />
+          </li>
+          <li>
+            <img src="./src/instagram.svg" alt="인스타그램 아이콘" />
+          </li>
+          <li>
+            <img src="./src/facebook.svg" alt="페이스북 아이콘" />
+          </li>
+          <li>
+            <img src="./src/youtube.svg" alt="유튜브 아이콘" />
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
