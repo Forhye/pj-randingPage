@@ -8,42 +8,44 @@
     <!--css-->
     <link rel="stylesheet" href="./css/style.css" />
     <!-- <link
-      rel="stylesheet"
-      href="./css/mobile.css"
-      media="screen and (max-width:767px)"
+    rel="stylesheet"
+    href="./css/mobile.css"
+    media="screen and (max-width:767px)"
     /> -->
     <link
-      rel="stylesheet"
-      href="./css/web.css"
-      media="screen and (min-width:768px)"
+    rel="stylesheet"
+    href="./css/web.css"
+    media="screen and (min-width:768px)"
     />
   </head>
   <body>
     <header>
       <h1 class="sr-only">HODU 랜딩 페이지</h1>
-
       <!-- 헤더 로고&메뉴 영역 -->
       <div class="header-nav">
         <a href="#">
-          <img src="/src/logo.svg" alt="HODU 로고 이미지" />
+          <img src="./src/logo.svg" alt="HODU 로고 이미지" />
         </a>
-
+        
         <nav>
           <ul>
             <li class="dis-767-none"><a href="#">Home</a></li>
             <li class="dis-767-none"><a href="#">About</a></li>
             <li class="dis-767-none"><a href="#">Support</a></li>
             
-              <li class="dis-767-none"><button>Download</button></li>
+            <li class="dis-767-none"><button>Download</button></li>
             </a>
           </ul>
 
           
-            <img src="src/menu.svg" alt="메뉴 아이콘" class="dis-768-none" />
+          <img src="./src/menu.svg" alt="메뉴 아이콘" class="dis-768-none" />
           </a>
         </nav>
       </div>
-
+    </header>
+    
+    <section class="header-banner">
+      <h3></h3>
       <!-- 헤더 텍스트 영역 -->
       <div class="header-text-area">
         <p class="header-text-bold">
@@ -67,35 +69,42 @@
           </span>
           <span>when an unknown</span>
         </p>
-
+        
         <!-- 다운로드 버튼 -->
         <div class="header-btn-download">
           <button class="btn-orange">Download</button>
         </div>
-
+        
         <!-- 헤더 이미지 영역 -->
         <div class="header-img">
           <img
-            src="./src/box-cat.png"
-            alt="머리가 가려지는 만큼 작은 박스를 머리에 뒤집어 쓰고 앉아있는 고양이 사진"
+          src="./src/box-cat.png"
+          alt="머리가 가려지는 만큼 작은 박스를 머리에 뒤집어 쓰고 앉아있는 고양이 사진"
           />
         </div>
       </div>
-    </header>
-
+    </section>
+    
+    <!-- top 버튼 -->
+    <aside class="btn-top">
+      <a href="#">
+        <img src="./src/top-btn.svg" alt="">
+      </a>
+    </aside>
     <!-- 메인 컨텐츠 영역 시작 -->
     <main>
       <h2 class="sr-only">메인 컨텐츠</h2>
 
+      
       <!-- 첫번째 컨텐츠 이미지 + 타이틀 + 설명 -->
       <section>
         <h3 class="sr-only">첫번째 컨텐츠</h3>
-
+        
         <div class="contain-first">
           <!-- 첫번째 컨텐츠 이미지 -->
           <img
-            src="/src/img_4.jpg"
-            alt="체크무늬 이불 위에 누워서 대각선 방향으로 바라보고 있는 고양이 사진"
+          src="./src/img_4.jpg"
+          alt="체크무늬 이불 위에 누워서 대각선 방향으로 바라보고 있는 고양이 사진"
           />
           <!-- 첫번째 컨텐츠 텍스트 영역 -->
           <div class="first-area-text">
@@ -143,7 +152,7 @@
           />
           <img
             src="./src/img_3.jpg"
-            alt="벽을 쳐다보고 앉아있는 고양이의 뒷모습 사진"
+            alt="카메라를 정면으로 바라보고 앉아있는 고양이 사진"
           />
         </div>
       </section>
@@ -155,10 +164,10 @@
         <!-- 세번째 컨텐츠 텍스트 -->
         <p class="third-text-description">
           <span>Lorem Ipsum is simply dummy text of the</span>
-          <span>printing and typesetting industry.</span>
+          <span>printing and typesetting industry.<br></span>
           <span>Lorem Ipsum has been the industry's</span>
           <span>standard dummy text ever since the 1500s,</span>
-          <span>when an unknown</span>
+          <span>when an unknown<br></span>
           <span>Ipsum is simply dummy text of the printing</span>
           <span>and typesetting industry.</span>
         </p>
@@ -171,16 +180,20 @@
 
       <!-- 네번째 컨텐츠 폼 -->
       <form action="#">
-        <p class="form-title">
-          Subscribe to our
-          <span>Blog post</span>
-        </p>
-        <p class="form-descrition">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text
-        </p>
+
+      <div class="form-text-area">
+          <p class="form-title">
+            Subscribe to our
+            <span>Blog post</span>
+          </p>
+          <p class="form-descrition">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.<br> Lorem Ipsum has been the industry's standard dummy text
+          </p>
+      </div>
 
         <div class="form-input">
+          <div class="input-email">
           <img src="./src/mail.svg" alt="편지 모양 아이콘" />
 
           <input
@@ -190,22 +203,17 @@
             required
           />
         </div>
-
-        <!-- 폼 버튼 -->
-        <div class="btn-subscribe">
-          <button type="submit">Subscribe</button>
+          <!-- 폼 버튼 -->
+          <div class="btn-subscribe">
+            <button type="submit">Subscribe</button>
+          </div>
         </div>
+
       </form>
 
-      <!-- top 버튼 -->
-      <aside class="btn-top"></aside>
 
       <!-- 백그라운드 고양이 -->
       <div class="bg-cat">
-        <img
-          src="./src/img_5.jpg"
-          alt="정면을 보고 있는 고양이를 아래 각도에서 촬영한 사진"
-        />
       </div>
     </main>
 
