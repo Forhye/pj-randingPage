@@ -14,13 +14,23 @@
   display: none;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
 /* 헤더 로고&메뉴 */
-header .header-nav {
+.header-nav {
   display: flex;
   justify-content: space-between;
-  padding: 24px 20px;
+  padding: 31px 0;
   max-width: 1280px;
   margin: auto;
+}
+
+.header-nav > a img {
+  width: 130px;
 }
 
 .header-nav > nav ul {
@@ -45,7 +55,7 @@ header .header-nav {
 }
 
 /* 헤더 텍스트 영역 */
-header .header-text-area {
+.header-text-area {
   text-align: left;
 
   max-width: 1280px;
@@ -56,13 +66,13 @@ header .header-text-area {
   padding-top: 200px;
 }
 
-header .header-text-area .header-text-bold {
+.header-text-area .header-text-bold {
   font-size: var(--text-48--);
   font-weight: 700;
   line-height: 60px;
 }
 
-header .header-text-area .header-text-description {
+.header-text-area .header-text-description {
   font-size: var(--text-16--);
   font-weight: 400;
   padding: 40px 0;
@@ -76,7 +86,7 @@ header .header-text-area .header-text-description {
 }
 
 /* 헤더 버튼 */
-header div.btn-download .btn-orange {
+div.btn-download .btn-orange {
   color: #fff;
   font-size: var(--text-16--);
   font-weight: 700;
@@ -88,7 +98,7 @@ header div.btn-download .btn-orange {
 }
 
 /* 헤더 이미지 */
-header .header-img {
+.header-img {
   display: flex;
   justify-content: right;
   margin-top: -500px;
@@ -189,6 +199,7 @@ main section .contain-first {
   display: flex;
   gap: 70px;
   justify-content: space-between;
+  overflow: visible;
 
   width: 100%;
   height: 378px;
@@ -201,43 +212,50 @@ main section .contain-first {
 
 /* 세번째 컨텐츠 시작 */
 .contain-third {
+  font-size: 1rem;
+
   padding: 50px 0;
-  /* position: relative; */
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
+.contain-third p > span {
+  display: inline;
+}
 .third-button > button {
-  /* position: absolute; */
-  /* right: 0; */
-  /* margin: 30px 0; */
-  /* margin-left: 230px; */
-  width: 126px;
-  height: 40px;
+  width: 147px;
+  height: 50px;
 }
 
 /* 폼 섹션 */
 form {
+  color: #fff;
+
+  max-width: 1280px;
+  box-sizing: border-box;
+
   background-color: #263140;
   border-radius: 18px;
-  padding: 30px 32px;
-  margin-top: 100px;
+  padding: 50px 58px;
+  margin: auto;
 
-  color: #fff;
+  display: flex;
+  justify-content: space-between;
 }
 
 .form-title {
-  font-size: var(--text-24--);
+  font-size: var(--text-36--);
   font-weight: 700;
   line-height: 30px;
 
   margin-top: 2px;
   margin-bottom: 20px;
-  padding: 0 9px;
+  padding: 0 0;
 }
 
 .form-title > span {
-  display: block;
+  display: inline;
 }
 
 .form-descrition {
@@ -245,50 +263,70 @@ form {
   font-size: var(--text-14--);
   line-height: 20px;
 
-  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 0;
 }
 
-form input::placeholder {
-  position: absolute;
-  left: 45px;
+/* 폼 input */
+.form-input {
+  width: 530px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-form > img {
-  width: 18px;
-  position: absolute;
-  padding: 11px 18px;
-}
-
-form > input {
+.form-input .input-email {
   width: 100%;
-  padding: 12px 0;
+}
+
+.form-input input {
+  width: calc(100% - 68px);
+  padding: 20px 0 20px 68px;
   border-radius: 60px;
   border: none;
 
-  font-size: 0.75rem;
+  font-size: 1rem;
+}
+
+.form-input input::placeholder {
+  position: absolute;
+  left: 68px;
+}
+
+.form-input .input-email img {
+  width: 24px;
+  position: absolute;
+  padding: 18px 16px 18px 28px;
 }
 
 .btn-subscribe {
-  display: flex;
-  justify-content: right;
-  margin-top: 20px;
+  position: absolute;
+  right: 0;
+  margin-right: 5px;
+  margin-top: 0;
 }
 
 .btn-subscribe > button {
   color: #fff;
+  font-size: 1rem;
   font-weight: 700;
 
   background-color: var(--color-orange--);
   border: none;
   border-radius: 40px;
-  padding: 11px 24px;
+  padding: 15px 29px;
 }
 
 /* 뒷배경 */
 .bg-cat {
-  position: absolute;
-  width: 100%;
-  height: 240px;
+  width: 100vw;
+  height: 340px;
+  background-image: url(./src/img_5.jpg);
+  background-position: 0 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #f2e9d8;
 
   opacity: 60%;
@@ -296,56 +334,64 @@ form > input {
   margin-left: -32px;
   z-index: -999;
 }
-.bg-cat > img {
-  width: 100%;
-  height: 240px;
-
-  object-fit: cover;
-  object-position: 0 -25px;
-}
 
 /* footer */
 footer {
-  margin-top: 104px;
-  padding: 30px 20px;
+  max-width: 1280px;
+  margin: auto;
+  padding: 40px 0;
 }
 
-.area-footer {
+.footer-area {
   display: flex;
   justify-content: space-between;
 }
 
 .logo > a > img {
-  width: 120px;
+  width: 226px;
 }
 
-ul.nav-menu {
-  text-align: right;
-  font-size: var(--text-14--);
+footer ul {
+  display: none;
 }
 
-ul.nav-menu li {
-  margin-bottom: 16px;
-}
-ul.nav-menu li > a {
-  color: #767676;
+.footer-social {
+  float: right;
+  margin-top: -60px;
 }
 
-.area-social > ul > li {
-  width: 32px;
-  height: 32px;
-  background-color: #f29d52;
-
-  border-radius: 50%;
-  text-align: center;
-  align-content: center;
-}
-
-.area-social .social {
+.footer-social .social {
   display: flex;
   gap: 16px;
-  margin-top: -40px;
+  margin-top: 0;
 }
-.area-social > ul > li > img {
-  width: 16px;
+.footer-social > ul > li {
+  width: 42px;
+  height: 42px;
+}
+.footer-social > ul > li > a {
+  display: flex;
+  justify-content: center;
+}
+.footer-social > ul > li > a img {
+  width: 24px;
+}
+
+aside.btn-top {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 999;
+}
+
+aside.btn-top a img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #c4c4c4;
+  border-radius: 50%;
+
+  background-color: #fff;
+  background-image: url(./src/top-btn.svg);
+  background-position: center;
+  opacity: 80%;
 }
