@@ -323,7 +323,7 @@ form {
 .bg-cat {
   width: 100vw;
   height: 340px;
-  background-image: url(./src/img_5.jpg);
+  background-image: url(src/img_5.jpg);
   background-position: 0 35%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -391,7 +391,7 @@ aside.btn-top a img {
   border-radius: 50%;
 
   background-color: #fff;
-  background-image: url(./src/top-btn.svg);
+  background-image: url(src/top-btn.svg);
   background-position: center;
   opacity: 80%;
 }
