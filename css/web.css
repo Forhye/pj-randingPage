@@ -324,7 +324,7 @@ form {
   width: 100vw;
   height: 340px;
   background-color: #f2e9d8;
-  background-image: url(/src/img_5.jpg);
+  background-image: url(../src/img_5.jpg);
   background-position: 0 35%;
   background-repeat: no-repeat;
   background-size: cover;
