@@ -15,7 +15,7 @@
 }
 
 /* 헤더 로고&메뉴 */
-header .nav-main {
+header .header-nav {
   display: flex;
   justify-content: space-between;
   padding: 24px 20px;
@@ -23,17 +23,17 @@ header .nav-main {
   margin: auto;
 }
 
-header .nav-main ul {
+.header-nav > nav ul {
   display: flex;
   gap: 30px;
 }
 
-header .nav-main ul li {
+.header-nav nav ul li {
   align-content: center;
 }
 
-/* 헤더 메뉴 > 버튼 */
-header .nav-main ul li button {
+/* 헤더 메뉴안에 버튼 */
+.header-nav nav ul li button {
   color: #fff;
   font-size: var(--text-16--);
   font-weight: 700;
@@ -45,29 +45,34 @@ header .nav-main ul li button {
 }
 
 /* 헤더 텍스트 영역 */
-header .main-text-area {
+header .header-text-area {
+  text-align: left;
+
   max-width: 1280px;
   margin: auto;
   position: relative;
   z-index: 2;
-
   padding: 0 20px;
   padding-top: 200px;
+}
 
+header .header-text-area .header-text-bold {
   font-size: var(--text-48--);
   font-weight: 700;
   line-height: 60px;
 }
 
-header .main-text-area .text-description-header {
+header .header-text-area .header-text-description {
   font-size: var(--text-16--);
   font-weight: 400;
   padding: 40px 0;
   line-height: 20px;
 }
 
-header .main-text-area em:nth-child(1) {
-  display: block;
+/* 웹용 문단 나누기 */
+.header-text-area .header-text-bold em:nth-child(2),
+.header-text-area .header-text-description span {
+  display: inline;
 }
 
 /* 헤더 버튼 */
@@ -83,13 +88,18 @@ header div.btn-download .btn-orange {
 }
 
 /* 헤더 이미지 */
-header .area-main-img {
+header .header-img {
   display: flex;
   justify-content: right;
   margin-top: -500px;
 
   position: relative;
   z-index: -1;
+}
+
+.header-img img {
+  width: 415px;
+  padding-top: 30px;
 }
 /* header 끝----------------------------- */
 
@@ -98,7 +108,7 @@ main {
   padding: 40px 32px;
   z-index: 2;
   position: relative;
-  margin-top: -110px;
+  margin-top: -125px;
   background-color: #fff;
   overflow: hidden;
 }
@@ -126,11 +136,18 @@ main section .contain-first {
   box-shadow: 10px 10px 30px 0px #00000040;
 }
 
+@media screen and (max-width: 1334px) {
+  .contain-first > img {
+    object-position: 0 0;
+    object-fit: contain;
+  }
+}
+
 /* 첫번째 컨텐츠 텍스트 영역 */
-.area-text {
+.first-area-text {
   margin-left: 110px;
 }
-.area-text .text-bold {
+.first-area-text .first-text-bold {
   font-size: var(--text-36--);
   font-weight: 700;
   line-height: 45.07px;
@@ -139,7 +156,7 @@ main section .contain-first {
   width: 510px;
 }
 
-.area-text .text-description {
+.first-area-text .first-text-description {
   font-size: var(--text-16--);
   line-height: 20px;
 
@@ -148,59 +165,53 @@ main section .contain-first {
 }
 
 /* 두번째 컨텐츠 시작 */
-article.contain-second {
+.contain-second {
   text-align: center;
 }
 
-p.text-point {
-  font-size: var(--text-24--);
+.second-area-text .second-text-point {
+  font-size: var(--text-48--);
   font-weight: 700;
-  line-height: 30px;
+  line-height: 60px;
   color: var(--color-orange--);
 
-  padding: 30px 0;
-  margin-top: 30px;
-}
-
-.text-description-l {
-  line-height: 20px;
-}
-.text-description-l > .text-point-small {
-  font-weight: 700;
-  color: var(--color-orange--);
-}
-article.contain-second p > span,
-.learn-more p > span {
-  display: block;
-}
-
-.contain-second .img-area {
-  display: flex;
-  gap: 20px;
-
-  width: 100vw;
-  height: 260px;
   padding: 40px 0;
-  overflow: scroll;
+  margin-top: 80px;
 }
-.contain-second .img-area::-webkit-scrollbar {
-  display: none;
+.second-text-description {
+  margin-bottom: 48px;
+}
+.second-area-text p > span {
+  display: inline;
 }
 
+.second-area-img {
+  display: flex;
+  gap: 70px;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 378px;
+  padding: 40px 0;
+}
 .contain-second .img-area > img {
   border-radius: 18px;
   box-shadow: 10px 10px 20px 0px #00000040;
 }
 
-.learn-more {
-  padding: 20px 0;
-  position: relative;
+/* 세번째 컨텐츠 시작 */
+.contain-third {
+  padding: 50px 0;
+  /* position: relative; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.learn-more > button {
-  position: absolute;
-  right: 0;
-  margin: 30px 0;
-  margin-left: 230px;
+.third-button > button {
+  /* position: absolute; */
+  /* right: 0; */
+  /* margin: 30px 0; */
+  /* margin-left: 230px; */
   width: 126px;
   height: 40px;
 }
