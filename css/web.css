@@ -323,11 +323,11 @@ form {
 .bg-cat {
   width: 100vw;
   height: 340px;
-  background-image: url(src/img_5.jpg);
+  background-color: #f2e9d8;
+  background-image: url(/src/img_5.jpg);
   background-position: 0 35%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #f2e9d8;
 
   opacity: 60%;
   margin-top: -96px;
