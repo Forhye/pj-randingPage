@@ -1,13 +1,13 @@
-:root {
+/* :root {
   --color-orange--: #d97652;
   --text-14--: 0.875rem;
   --text-16--: 1rem;
   --text-18--: 1.125rem;
   --text-24--: 1.5rem;
-}
+} */
 
 /* header 시작----------------------------- */
-header .nav-main {
+/* header .nav-main {
   display: flex;
   justify-content: space-between;
   padding: 24px 20px;
@@ -15,38 +15,38 @@ header .nav-main {
 
 header .nav-main > img {
   width: 92px;
-}
+} */
 
 /* 모바일에선 숨김 */
-header .nav-main .dis-767-none,
+/* header .nav-main .dis-767-none,
 br {
   display: none;
-}
+} */
 
 /* 헤더 텍스트 영역 */
-header .main-text-area {
+/* header .main-text-area {
   text-align: center;
   padding: 40px 50px;
   font-size: var(--text-24--);
   font-weight: 700;
   line-height: 30px;
-}
+} */
 
-header .main-text-area .text-description-header {
+/* header .main-text-area .text-description-header {
   font-size: var(--text-14--);
   font-weight: 400;
   padding: 30px 0;
   line-height: 20px;
-}
+} */
 
 /* 텍스트 블럭처리로 강제 문단 나누기 */
-.main-text-area p.text-em > em,
+/* .main-text-area p.text-em > em,
 .text-description-header > span {
   display: block;
-}
+} */
 
 /* 헤더 버튼 */
-.btn-orange {
+/* .btn-orange {
   color: #fff;
   font-size: var(--text-14--);
   font-weight: 700;
@@ -55,17 +55,17 @@ header .main-text-area .text-description-header {
   padding: 11px 24px;
   border-radius: 40px;
   border: none;
-}
+} */
 
 /* 헤더 이미지 */
-.area-main-img img {
+/* .area-main-img img {
   width: 197px;
   padding-top: 30px;
-}
+} */
 /* header 끝----------------------------- */
 
 /* main 끝----------------------------- */
-main {
+/* main {
   padding: 40px 32px;
   z-index: 2;
   position: relative;
@@ -75,24 +75,24 @@ main {
 }
 
 /* 첫번째 컨텐츠 시작 */
-.contain-first {
+/* .contain-first {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+}  */
 
 /* 첫번째 컨텐츠 이미지 */
-.contain-first > img {
+/* .contain-first > img {
   width: 326px;
   height: 190px;
   object-fit: cover;
   object-position: 0 -40px;
   border-radius: 30px;
   box-shadow: 10px 10px 20px 0px #00000040;
-}
+} */
 
 /* 첫번째 컨텐츠 텍스트 영역 */
-main section div.contain-first .text-bold {
+/* main section div.contain-first .text-bold {
   font-size: var(--text-24--);
   font-weight: 700;
   line-height: 30px;
@@ -107,10 +107,10 @@ main section div.contain-first .text-description {
 
   width: 326px;
   padding-top: 20px;
-}
+} */
 
 /* 두번째 컨텐츠 시작 */
-article.contain-second {
+/* section.contain-second {
   text-align: center;
 }
 
@@ -165,10 +165,10 @@ article.contain-second p > span,
   margin-left: 230px;
   width: 126px;
   height: 40px;
-}
+} */
 
 /* 폼 섹션 */
-form {
+/* form {
   background-color: #263140;
   border-radius: 18px;
   padding: 30px 32px;
@@ -204,14 +204,15 @@ form input::placeholder {
   left: 45px;
 }
 
-form > img {
+form .form-input > img {
   width: 18px;
   position: absolute;
   padding: 11px 18px;
 }
 
-form > input {
+form .form-input input {
   width: 100%;
+  max-width: 300px;
   padding: 12px 0;
   border-radius: 60px;
   border: none;
@@ -233,10 +234,10 @@ form > input {
   border: none;
   border-radius: 40px;
   padding: 11px 24px;
-}
+} */
 
 /* 뒷배경 */
-.bg-cat {
+/* .bg-cat {
   position: absolute;
   width: 100%;
   height: 240px;
@@ -256,7 +257,7 @@ form > input {
 }
 
 /* footer */
-footer {
+/* footer {
   margin-top: 104px;
   padding: 30px 20px;
 }
@@ -299,4 +300,4 @@ ul.nav-menu li > a {
 }
 .area-social > ul > li > img {
   width: 16px;
-}
+} */
