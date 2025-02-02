@@ -10,10 +10,6 @@
 
 > https://forhye.github.io/pj-randingPage/
 
-## 💛 프로젝트 목적
-- 반응형 페이지를 구현한다.
-- js를 이용해 간단한 기능을 구현한다.
-
 ### 디자인 출처
 
 - ESsoft 부트캠프 과정 중 주식회사 WeNiv의 디자인을 제공받아 제작하였습니다.
